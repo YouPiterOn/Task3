@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        @font-face {
+            font-family: Roboto;
+            src: url(Fonts/Roboto-Black.ttf);
+        }
+        :root {
+            --myblue: #08a4fc;
+        }
+        header {
+            
+        }
+        a {
+            text-align:center;
+            margin-left: 3%;
+            border-radius: 5px;
+            line-height: 25px;
+            width:auto;
+        }
+            a:link, a:visited {
+                text-decoration: none;
+                border: 2px solid transparent;
+                color: black;
+            }
+            a:hover {
+                background-color: white;
+                border: 2px solid var(--myblue);
+                text-decoration: none;
+                color: black;
+            }
+            a:active {
+                color: var(--myblue);
+                border: 2px solid transparent;
+            }
+        .header-main {
+            margin-top: 25px;
+            text-align: center;
+            font-family: Arial;
+            display: flex;
+            flex-direction: row;
+            margin-left: 20%;
+            width: 40%;
+        }
+        .header-right {
+            display: flex;
+            flex-direction: row;
+            margin-top: -25px;
+            margin-left: 80%;
+        }
+        .primary-button {
+            height:25px;
+            width:125px;
+            background-color: blue;
+            color: white;
+            border-radius: 25px;
+            border: none;
+            text-decoration: none;
+        }
+            .primary-button:hover {
+                height: 25px;
+                width: 125px;
+                border-radius: 25px;
+                background-color: var(--myblue);
+                color: white;
+            }
+        .secondary-button {
+            height: 25px;
+            width: 150px;
+            border-radius: 25px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+            .secondary-button:hover {
+                height: 25px;
+                width: 150px;
+                border-radius: 25px;
+                background-color: var(--myblue);
+                color: white;
+                border: 2px solid var(--myblue);
+            }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <header style="height: 75px; width: 1560px; margin: auto; display:inline-block;">
+        <div class="header-main">
+            <a href="About.html">About us</a>
+            <a href="">link 2</a>
+            <a href="">Active btn</a>
+            <a href="">Important link</a>
+            <a href="">Contacts</a>
+            <a href="">Hovered btn</a>
+        </div>
+        <div class="header-right">
+            <button class="secondary-button">
+                <img src="Images/arrow.png" style="width:10px; height:10px; margin-top: 2px;" />
+                Secondary button
+            </button>
+            <button class="primary-button" style="margin-left: 10px;">
+                Primary button
+            </button>
+        </div>
+    </header>
+    <div style="height: 994px; width: 1530px; background-color: var(--myblue); border-radius: 30px; margin-left: 15px; margin-top: 15px; display: flex; flex-direction: row">
+        <div style="height: 100%; width: 50%;">
+            <h1 style="font-family:Roboto; color:white; font-size: 70px; margin-left: 10%;">Header text very big near the picture</h1>
+            <p style="font-family: Impact; color: white; font-size: 30px; width: 50%; margin-left: 10%; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div style="height:100%; width:50%">
+            <img src="Images/image.png" style="margin-top: 100px;" />
+        </div>
+    </div>
+</body>
+</html>
